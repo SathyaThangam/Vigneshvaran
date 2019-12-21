@@ -52,6 +52,7 @@ a{
     background-image: url("http://rollpark.us/wp-content/uploads/2018/10/hero-image.jpg");
     width: 100%;
     height:520px;
+    filter: grayscale(30%);
 
 }
 .play_button{
@@ -137,24 +138,132 @@ p{
 .fourth_partner li img{
     height: 30px;
     width: 90px;
-    color: gray;
+    opacity: 0.4;
 }
 .fourth_con_img{
     margin-top: 20px;
     margin-left: 60px;
 }
 .fourth_firstcon{
-    display: inline-block;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
 }
 
-.fourth_con_img1:hover,.fourth_con_img2:hover,.fourth_con_img3:hover{
-    transform: scale(1.2);
-    transition: ease-in-out 2000ms;
-    overflow: hidden;
-    position: relative;
-}
-.fourth_divcontainer1,.fourth_divcontainer3,.fourth_divcontainer2 {
-    overflow: hidden;
-    height: 450px;
+.fourth_firstcon div {
+    
     width: 560px;
+    height: 400px;
+    overflow: hidden;
 }
+
+.fourthimg{
+    width: 100%;
+    height: 100%; 
+    transition-property: all, opacity;
+    transition-duration: 5s, 0s;
+    transition-timing-function: linear, ease;
+
+}
+
+.fourthimg:hover{
+    transform: scale(1.2);
+    position: relative;
+    opacity: 0.7;
+}
+
+.fourth_quote{
+    margin-left: 40px;
+    margin-right: 80px;
+    margin-top: 100px;
+    font-size: 1.875em;
+    font-family: "Sentinel";
+}
+.fourth_quote h4{
+    font-weight: 700;
+}
+.fourth_quote h4::before{
+    content: "“";
+    font-size: 2em;
+    font-weight: 700;
+    opacity: 0.2;
+    margin-top:-10px;
+}
+.fourth_quote p,.fifth_container p{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: "Circular Pro";
+}
+.author{
+    margin-left: 30px;
+   margin-top: 30px;
+   clear: both;
+}
+.title{
+    font-size: 12px;
+    opacity: 0.4;
+    
+}
+#authorimg{
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.content{
+    width: 50%;
+   
+    background: #46C97E;
+}
+.delay-1{
+font-size: 1.5625em;
+line-height: 1.28em;
+margin-left: 50px;
+margin-top: 20px;
+}
+.clearfix{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.clearfix li{
+    list-style: none;
+}
+.clearfix li p{
+    font-size: 14px;
+} 
+.serif2{
+    margin-top: 10px;
+    font-family: "Sentinel";
+    margin-left: 50px;
+    margin-right: 40px;
+    opacity: 0.6;
+}
+.fifth_contop{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.serif{
+    margin-top: 10px;
+    font-family: "Sentinel";
+    opacity: 0.6;
+}
+.clearfix li img{
+    opacity: 0.7;
+}
+.fifth_secondpart{
+    margin-top: 40px;
+    display:flex;
+}
+.fifth_right {
+     width: 700px;
+    background-image: url("http://rollpark.us/wp-content/themes/rollpark/img/map.png");
+}
+.years-in-numbers{
+     list-style: none;
+     display: flex;
+     margin-top: 40px;
+     margin-left: 50px;
+}
+
