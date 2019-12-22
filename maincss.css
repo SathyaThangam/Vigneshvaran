@@ -164,7 +164,6 @@ p{
     transition-property: all, opacity;
     transition-duration: 5s, 0s;
     transition-timing-function: linear, ease;
-
 }
 
 .fourthimg:hover{
@@ -463,5 +462,18 @@ footer{
 .social img{
     margin-left: 10px;
     opacity: 0.8;
+}
+.message_fixed{
+    margin-left: 93%;
+    margin-top: -90px;
+
+}
+.message_fixed{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+.copyright{
+    font-size: 12px;
 }
 
