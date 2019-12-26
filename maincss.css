@@ -2,14 +2,24 @@
     margin : 0;
     padding : 0;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url("font.otf");
+  }
+  svg{
+      fill: white;
+      margin-top: 16px;
+      margin-left: 100px;
+  }
 body{
     background-color: ivory;
+    font-family:Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
 }
 .logo{
     margin-left:90px;
     margin-top: 15px;
     font-size:30px;
-    font-family: Circular Pro;
+    font-family: "myFirstFont"!important;
     text-decoration: none;
     color: white;
 }
@@ -18,6 +28,7 @@ body{
 }
 .row{
     display: flex;
+    
 }
 .menu-items{
     display:flex;
@@ -52,23 +63,24 @@ a{
     background-image: url("http://rollpark.us/wp-content/uploads/2018/10/hero-image.jpg");
     width: 100%;
     height:520px;
+    filter: grayscale(30%);
 
 }
 .play_button{
-    height: 70px;
-    width: 75px;
-    margin-top: 135px;
-    margin-left: 87px;
+    height: 60px;
+    width: 60px;
+    margin-top: 155px;
+    margin-left: 97px;
 }
 .big_font{
 
-    margin-left: 87px;
+    margin-left: 97px;
     font-weight: bold;
     color:white;
     font-size: 55px;
 }
 .small_font{
-    margin-left: 87px;
+    margin-left: 97px;
     color: white;
     font-size: 55px;
     font-style: italic;
@@ -90,9 +102,13 @@ a{
      list-style: none;
      display: flex;
 }
-p{
-    font-size: 13px;
-    color: gray;
+.second_container_items li p{
+    text-align: left;
+    font-size: 14px;
+    opacity: 0.6;
+}
+.second_container_items li h1{
+    font-weight: 400;
 }
 .line2{
     margin-top: 30px;
@@ -103,6 +119,7 @@ p{
 .third_heading,.fourth_heading{
     margin-left:80px ;
     margin-top: 60px;
+    font-weight: 550;
 }
 .third_list{
     list-style-type: none;
@@ -115,6 +132,7 @@ p{
 .third_list li{
     margin-top: 10px;
     font-size: 18px;
+    opacity: 0.7;
 }
 .third_container img{
     margin-top:60px ;
@@ -122,9 +140,12 @@ p{
     height: 30%;
 }
 .fourth_sub{
-    font-size: 18px;
+    margin-top: 5px;
+    font-size: 24px;
     font-style: italic;
     margin-left: 80px;
+    opacity: 0.8;
+    font-weight: 200;
 }
 .fourth_partner{
     list-style-type: none;
@@ -137,24 +158,350 @@ p{
 .fourth_partner li img{
     height: 30px;
     width: 90px;
-    color: gray;
+    opacity: 0.4;
 }
 .fourth_con_img{
     margin-top: 20px;
     margin-left: 60px;
 }
 .fourth_firstcon{
-    display: inline-block;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
 }
 
-.fourth_con_img1:hover,.fourth_con_img2:hover,.fourth_con_img3:hover{
-    transform: scale(1.2);
-    transition: ease-in-out 2000ms;
-    overflow: hidden;
-    position: relative;
-}
-.fourth_divcontainer1,.fourth_divcontainer3,.fourth_divcontainer2 {
-    overflow: hidden;
-    height: 450px;
+.fourth_firstcon div {
+    
     width: 560px;
+    height: 400px;
+    overflow: hidden;
 }
+
+.fourthimg{
+    width: 100%;
+    height: 100%; 
+    transition-property: all, opacity;
+    transition-duration: 5s, 0s;
+    transition-timing-function: linear, ease;
+}
+
+.fourthimg:hover{
+    transform: scale(1.2);
+    position: relative;
+    opacity: 0.7;
+}
+
+.fourth_quote{
+    margin-left: 40px;
+    margin-right: 80px;
+    margin-top: 60px;
+    font-size: 1.875em;
+    font-family: "Sentinel";
+}
+.fourth_quote h4{
+    font-weight: 500;
+}
+.fourth_quote h4::before{
+    content: "“";
+    font-size: 2em;
+    font-weight: 700;
+    opacity: 0.2;
+    margin-top:-10px;
+}
+.fourth_quote p,.fifth_container p{
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: "Circular Pro";
+    opacity: 0.6;
+}
+.author{
+    margin-left: 30px;
+   margin-top: 30px;
+   clear: both;
+}
+.title{
+    font-size: 12px;
+    opacity: 0.4;
+    
+}
+#authorimg{
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.content{
+    width: 53%;
+   
+    background: #46C97E;
+}
+.delay-1{
+font-size: 1.5625em;
+line-height: 1.28em;
+margin-left: 50px;
+margin-top: 20px;
+}
+.clearfix{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+.clearfix li{
+    list-style: none;
+}
+.clearfix li p{
+    font-size: 14px;
+} 
+.serif2{
+    margin-top: 10px;
+    font-family: "Sentinel";
+    margin-left: 50px;
+    margin-right: 40px;
+    opacity: 0.6;
+    font-weight: 300;
+    font-size: 23px;
+}
+.fifth_contop{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+.fifth_contop h1{
+    font-weight: 550;
+}
+.serif{
+    margin-top: 10px;
+    font-family: "Sentinel";
+    opacity: 0.6;
+}
+.clearfix li img{
+    opacity: 0.7;
+}
+.fifth_secondpart{
+    margin-top: 40px;
+    display:flex;
+}
+.fifth_right {
+     width: 700px;
+}
+.years-in-numbers{
+     list-style: none;
+     display: flex;
+     margin-top: 40px;
+     margin-left: 50px;
+}
+.number2{
+    color: white;
+    font-size: 25px;
+}
+.fifth_last_con a{
+    align-items: center;
+    margin-left: 600px;
+}
+.fifth_last_con{
+    margin-top: 30px;
+}
+hr{
+    margin-top: 40px;
+}
+.sixth_img{
+    margin-top: 40px;
+    height: 300px;
+    width: 350px;
+    
+}
+.sixth_container{
+    display: flex;
+    margin-top: 30px;
+}
+.sixth_exp{
+    margin-left: 100px;
+    margin-right: 250px;
+    margin-top: 60px;
+}
+.sixth_explong{
+    font-size: 24px;
+    opacity: 0.6;
+    margin-top: 20px;
+    font-weight: 200;
+}
+.arrow-link{
+    margin-top:30px;
+    color: black;
+    margin-right: 20px;
+}
+table{
+   margin-left: 27%;
+   margin-top: 10px;
+}
+th,td{
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 200;
+}
+th{
+    padding: 25px;
+    font-size: 21px;
+    font-weight: 500;
+}
+td{
+    opacity: 0.7;
+}
+#roll{
+    color: #46C97E;;
+}
+.bold1{
+    font-weight: 700;
+    opacity: 1;
+}
+.eight_img_col img{
+    height: 80px;
+    width: 80px;
+}
+.eighth_img_row{
+    display:flex;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.eighth_img_row div{
+    margin-left: 20px;
+    width: 100px;
+}
+.eight_subfont{
+    opacity: 0.7;
+    font-size: 12px;
+    margin-left: 10px;
+}
+#eight_long{
+    margin-left: 100px;
+    margin-right: 90px;
+    margin-top: 30px;
+}
+.eight_img:hover{
+     border:2px solid white;
+     border-radius: 50%;
+     outline-style: solid;
+     outline-color: skyblue;
+     -moz-outline-radius: 50%;
+}
+#spec_arrow{
+    margin-left: 100px;
+}
+.ninth_container h4{
+    font-size: 20px;
+}
+.ninth_img{
+    margin-top: -130px;
+}
+#ninth_image{
+     z-index: 1;
+}
+.ninth_container{
+    display: flex;
+}
+.image_container{
+    margin-right: 150px;
+    margin-top: 40px;
+}
+#ninth_id{
+    font-size: 27px;
+}
+.tenth_container{
+    display: flex;
+}
+.tenth_link{
+    margin-top: 70px;
+    margin-left: -180px
+}
+#person_icon:hover{
+color: #46C97E;
+}
+.last_con{
+    background-color:#46C97E ;
+}
+.last_con h1{
+    margin-top:50px;
+    margin-left: 280px;
+    font-size: 3.4375em;
+}
+.last_head{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.last_con h3{
+    margin-left: 300px;
+    margin-right: 300px;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    opacity: 0.7 !important;
+}
+.last_btn{
+    margin-top: 30px;
+}
+.req_quo{
+    margin-left: 560px;
+    background-color: darkblue;
+    padding: 20px;
+    border-radius: 30px;
+}
+.last_info{
+    opacity: 0.6;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+}
+.foot_head1{
+    font-weight: 700;
+    opacity: 1;
+}
+.foot_left{
+    font-size: 14px;
+    opacity: 0.7;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+.foot_center{
+    font-size: 22px;
+    margin-left: 180px;
+    margin-top: 35px;
+}
+.foot_center h3{
+    font-weight: 500;
+}
+footer{
+    display: flex;
+    background-color: white;
+    font-family: "Sentinel";
+    height: 130px;
+}
+.foot_right{
+    opacity: 0.7;
+    margin-top: 30px;
+    margin-left: 170px;
+    text-align: end;
+}
+.social{
+    display: inline-block;
+}
+.social img{
+    margin-left: 10px;
+    opacity: 0.8;
+}
+.message_fixed{
+    margin-left: 93%;
+    margin-top: -90px;
+
+}
+.message_fixed{
+    position: sticky;
+    bottom: 0;
+    right: 0;
+}
+.copyright{
+    font-size: 11px;
+}
+
+
