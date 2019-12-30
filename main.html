@@ -3,7 +3,7 @@
     <head>
          <link rel="stylesheet" href="main.css">
     </head>
-    <body>
+    <body onload="display_content()">
         <div class="main_page">
             <div class="left_container">
                 <div class="left_top_scroll">
@@ -24,13 +24,13 @@
                    <br>
                </div>
                <br>
-               <h5 id="lib_head">MY LIBRARY</h5>
+               <h5 class="lib_head">MY LIBRARY</h5>
                <div class="welcome_link">
                     <a  href="#">Welcome</a>
                </div>
                 </div>
-               <div>
-                    <button class="lib_btn"><img src="index1.png" style="height: 15px;width: 15px;padding-right: 4px;margin-top: 0.5px;">  New Library</button>
+               <div class="left_third">
+                    <button class="lib_btn"><img src="index1.png" style="height: 15px;width: 15px;padding-right: 2px;margin-top: 0.5px;font-weight: 900;">  New Library</button>
                     <br>
                     <div class="mob_div">
                         <a class="mobbin">Mobbin</a>
@@ -52,11 +52,143 @@
                 </div>
             </div>
             <div class="center_container">
-               <h1></h1>
+                <div class="center_top">
+                    <div class="center_top_left">
+                        <h2 style="font-weight: bolder;font-size: 25.5px;">Discover the latest iOS UI design patterns</h2>
+                        <h4>Mobbin is a hand-picked collection of the latest mobile design patterns from apps that reflect the best in design. Get inspiration from over 170 iOS apps and 10,000 patterns (screenshots from iPhone X) available on the platform. Sign up to save your favorite patterns.
+                            </h4>
+                            <button class="lib_btn sign_up" id="body_signup" onclick="displaySignup_modal()"> SIGN UP</button>
+                            <h4 id="body_welcome"></h4>
+                    </div>
+                    <div class="center_top_right">
+                         <img class="main_img" src="index.png">
+                         <div class="slider">
+                             <div class="slider_show">
+                               <img src="1.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="2.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="3.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="4.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="5.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="6.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="7.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                               <img src="8.png" style="width: 30px;height: 30px;margin-left: 15px;">
+                            </div>
+                         </div>
+                         
+                    </div>
+                </div>
+               <div id="line"></div>
+             <div class="main_content">
+                 <div class="main_first">
+                  <a href="#"  class="signin small_signin" id="body_signin" onclick="displaySignin_modal()">Sign In</a>
+                </div>  
+                <div class="main_second">
+                    <h1>Browse</h1>
+                    <div class="two_links">
+                       <a class="app_link" href="#">APPS</a>
+                       <a href="#">PATTERNS</a>
+                    </div>
+                    <div class="filter">
+                        <a class="filter_link" href="#">Filter by categories</a>
+                        <input class="inp_class" placeholder="Try 'Lyft'"/>
+                    </div>
+                </div>
+                <div class="main_js">
+                    <div id="list_js">
+                        
+                    </div>
+                </div>
+             </div>
+             <button class="lib_btn last_link" id="bodylast_signin" onclick="displaySignin_modal()">Sign in to access all for FREE</button>
             </div> 
             <div class="right_container">
-                   <p>qwe</p>
+                   <div class="right_top">
+                    <a href="#" id="job_link" class="right_link">JOB BOARD</a>
+                    <a href="#" class="right_link">VIEW ALL</a>
+                   </div>
+                   <div class="right_down">
+                        
+                            <a href="#" id="job_link" class="right_link ad">ADS VIA CARBON</a>
+                            <img src="https://cdn4.buysellads.net/uu/1/3386/1525189943-38523.png" style="height: 100px;width: 130px;"> 
+                            <p >Limited time offer: Get 10 free Adobe Stock images.</p>
+                        
+                   </div>
             </div>
         </div>
+        <div id="signup_main">
+        <div id="signup_modal">
+            <div class="signup_left">
+                    <img  src="index2.png">
+                    <h2>WELCOME</h2>
+                    <h4>Mobbin is a hand-picked collection
+                        of latest mobile design patterns.</h4>
+                        <h4>Sign up now &</h4>
+                        <h3>GET ACCESS TO OVER
+                            150 APPS & 8,000 PATTERNS
+                            FOR FREE</h3>
+            </div>
+            <div class="signup_right">
+                <div class="close_modal" onclick='document.getElementById("signup_main").style.display="none"'>X</div>
+                <div class="signup_details">
+                    <h2>User Details:</h2>
+                     <h4>First Name</h4>
+                     <input id="first_name" class="inp_class signup_inp" required/>
+                     <h4>Last Name</h4>
+                     <input id="last_name" class="inp_class signup_inp" required/>
+                     <h4>E-Mail</h4>
+                     <input type="email" id="email" class="inp_class signup_inp" required/>
+                     <h4>Username</h4>
+                     <input id="user_name" class="inp_class signup_inp" required/>
+                     <h4>Password</h4>
+                     <input type="password" id="pwd" class="inp_class signup_inp" required/>
+                     
+                    <div class="both_btn">
+                       <button class="lib_btn sign_btn" onclick="addUser()">Sign-Up</button>
+                       <h2 style="margin-left: 10%;margin-top: 23px;">OR</h2>
+                       <button class="lib_btn sign_btn signin_btn" onclick="displaySignin_modal()">Sign-In</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div id="signin_main">
+            <div id="signin_modal">
+                <div class="signup_left">
+                        <img  src="index2.png">
+                        <h2>WELCOME</h2>
+                        <h4>Mobbin is a hand-picked collection
+                            of latest mobile design patterns.</h4>
+                            <h4>Sign in now &</h4>
+                            <h3>GET ACCESS TO OVER
+                                150 APPS & 8,000 PATTERNS
+                                FOR FREE</h3>
+                </div>
+                <div class="signup_right">
+                    <div class="close_modal" onclick='document.getElementById("signin_main").style.display="none"'>X</div>
+                    <div class="signup_details">
+                        <h2>User Details:</h2>
+                         
+                         <h4>Username</h4>
+                         <input id="signin_id" class="inp_class signup_inp"/>
+                         <h4>Password</h4>
+                         <input id="signin_pwd" type="password" class="inp_class signup_inp"/>
+                         <br>
+                         <br>
+                         <h6 id="auth_id">Authentication Failed.Try again</h6>
+                        <div class="both_btn">
+                           <button class="lib_btn sign_btn" onclick="verifyUser()">Sign-In</button>
+                           <h2 style="margin-left: 10%;margin-top: 23px;">OR</h2>
+                           <button class="lib_btn sign_btn signin_btn" onclick="displaySignup_modal()">Sign-Up</button>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            </div>
+
+            
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
